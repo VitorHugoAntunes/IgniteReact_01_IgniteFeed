@@ -1,0 +1,37 @@
+Projeto 1: Ignite Feed
+---- Conceitos ----
+React:
+	Biblioteca para criacao de interfaces web, mobile, tv, etc.
+Rendering patterns:
+	SSR(Server Side Rendering) - O backend recebe uma requisicao do cliente e constroi toda a pagina com html, css e JS com os dados requisitados e os envia para o frontend de uma vez
+	SPA(Single Page Application) - O frontend faz a requisicao dos dados para o backend e recebe apenas o texto dos dados (JSON - JavaScript Object Notation) e constroi a pagina com base nesses dados, a interface nao precisa ser reconstruida toda vez que ha uma requisicao
+	
+Compilers:
+	Compiladores - tem a funcao de converter o codigo escrito em uma sintaxe que possa ser entendida por onde esse codigo ira rodar. Ex: converter javascript moderno de modo que o browser entenda e possa executar (Babel).
+
+Bundle:
+	Converte os modulos e dependencias do projeto em arquivos menores e estaticos (brutos) para que os browsers possam interpretar.
+
+ReactDOM:
+	Responsavel por renderizar o codigo react dentro da DOM (arvore de elementos) do navegador.
+	
+Componente:
+	Uma funcao javascript que retorna HTML. Pode ser reutilizado em diversas partes da interface e permite uma melhor manutencao de codigo.
+	
+JSX:
+	Sintaxe HTML/XML dentro do Javascript.
+
+Propriedade:
+	Atributo dos elementos (componentes). Informacao que pode ser passada entre os componentes para renderizar informacoes diferentes em um mesmo componente igual.
+	
+CSS Modules:
+	Estrategia de estilizacao para que haja estilos especificos para cada componente, para que seja evitado que uma estilizacao interfira em outro componente da aplicacao, sendo realizado por classes especificas.
+
+Key:
+	Informacao unica de uma lista de elementos/componentes
+	Ajuda na performance porque apenas as keys novas sao renderizadas
+
+Momentos que um componente e renderizado novamente:
+	- Quando o estado se altera
+	- Quando a propriedade se altera
+	- Quando o componente pai se renderiza novamente
