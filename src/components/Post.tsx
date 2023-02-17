@@ -103,7 +103,7 @@ export function Post({author, publishedAt, content}: PostProps){
 
                 <textarea
                     name='comment'
-                    placeholder='Deixe eu comentario'
+                    placeholder='Deixe seu comentario'
                     value={newCommentText}
                     onChange={handleNewCommentChange}
                     onInvalid={handleNewCommentInvalid}
